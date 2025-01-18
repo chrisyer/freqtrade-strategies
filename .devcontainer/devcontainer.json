@@ -1,0 +1,13 @@
+{
+    "name": "Freqtrade",
+    "image": "ghcr.io/freqtrade/freqtrade-devcontainer:latest",
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "initializeCommand": "docker pull ghcr.io/freqtrade/freqtrade-devcontainer:latest",
+    "customizations": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+            "ms-python.python",
+            "ms-python.vscode-pylance"
+        ]
+    }
+}
